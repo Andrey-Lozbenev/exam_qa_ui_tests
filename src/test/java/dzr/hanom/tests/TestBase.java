@@ -20,8 +20,6 @@ public class TestBase {
         Configuration.pageLoadStrategy = "eager";
         Configuration.browserSize = ("1920x1080");
         Configuration.baseUrl = ("https://cloudmaster.ru");
-        open(Configuration.baseUrl);
-        $(".cookie__button").click();
         Configuration.remote = ("https://user1:1234@selenoid.autotests.cloud/wd/hub");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
@@ -29,6 +27,8 @@ public class TestBase {
                 "enableVideo", true
         ));
         Configuration.browserCapabilities = capabilities;
+        open(Configuration.baseUrl);
+        $(".cookie__button").click();
     }
 
     @BeforeEach

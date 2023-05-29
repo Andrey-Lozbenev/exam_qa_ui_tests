@@ -48,7 +48,7 @@ public class BlogPageTests extends TestBase {
         step("Кликаем на кнопку 'Добавить еще'", () -> {
         blogPage.addMoreNews();
         });
-        step("Проверяем, что добавились еще новости", () -> {
+        step("Проверяем, что добавилис еще новости", () -> {
         resultComponents.checkSuccessfulAddedMoreNews();
         });
     }
