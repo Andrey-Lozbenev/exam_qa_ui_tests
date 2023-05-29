@@ -11,7 +11,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.util.Map;
 
-import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
 public class TestBase {
@@ -28,7 +27,7 @@ public class TestBase {
         ));
         Configuration.browserCapabilities = capabilities;
         open(Configuration.baseUrl);
-        $(".cookie__button").click();
+
     }
 
     @BeforeEach
