@@ -17,7 +17,6 @@ public class BlogPageTests extends TestBase {
     @Test
     @DisplayName("При переходе во вкладку Блог есть запись `Блог Cloudmaster`")
     void successfulOpenBlogPageTest() {
-        $(".cookie__button").click();
         step("Открываем вкладку Блог", () -> {
         landingPage.openBlogPage();
         });
@@ -29,7 +28,9 @@ public class BlogPageTests extends TestBase {
     @Test
     @DisplayName("Открывается нужный блог при клике на новость из списка")
     void successfulOpenRightNewsInBlogRightNewsInBlog() {
-        $(".cookie__button").click();
+        step("Закрываем всплывающее окно Cookies", () -> {
+        landingPage.closeCookie();
+        });
         step("Открываем вкладку Блог", () -> {
         landingPage.openBlogPage();
         });
@@ -45,7 +46,6 @@ public class BlogPageTests extends TestBase {
     @Test
     @DisplayName("При нажатии на кнопку 'Загрузить еще' подгружаются еще новости")
     void successfulAddedMoreNews() {
-        $(".cookie__button").click();
         step("Открываем вкладку Блог", () -> {
         landingPage.openBlogPage();
         });

@@ -15,7 +15,8 @@ public class LandingPage {
             popupCloseElement = $(".popup__header-icon"),
             nameInputFromPopupForm = $("[name=name]"),
             emailInputFromPopupForm = $("[name=email]"),
-            phoneInputFromPopupForm = $("[name=phone_number]");
+            phoneInputFromPopupForm = $("[name=phone_number]"),
+            buttonCoockie = $(".cookie__button");
 
     public LandingPage openCosterPage() {
         costerFromFooter.click();
@@ -36,6 +37,9 @@ public class LandingPage {
         popupCloseElement.click();
         return this;
     }
-
+    public LandingPage closeCookie() {
+        buttonCoockie.click();
+        return this;
+    }
 
 }

@@ -16,6 +16,7 @@ public class BlogPage {
             RightNewsTitle = $(".article-header").$(byText("Интеграция Cloudmaster с Yandex Cloud")),
             buttonMoreNews = $(".blog__button");
 
+
     public final ElementsCollection
             newsItems = $$(".item-news").filter(visible);
 
@@ -29,4 +30,6 @@ public class BlogPage {
         buttonMoreNews.click();
         return this;
     }
+
+
 }
