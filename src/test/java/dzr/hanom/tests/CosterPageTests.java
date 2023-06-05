@@ -2,6 +2,8 @@ package dzr.hanom.tests;
 
 import dzr.hanom.components.ResultComponents;
 import dzr.hanom.pages.LandingPage;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +14,8 @@ public class CosterPageTests extends TestBase {
     LandingPage landingPage = new LandingPage();
     ResultComponents resultComponents = new ResultComponents();
 
-
+    @Epic("UI tests cloudmaster.ru")
+    @Feature("Coster page")
     @Test
     @DisplayName("При клике на Coster идет переброс на страницу, на которой есть текст 'FinOps-решение для бюджетирования, контроля и оптимизации расходов'")
     void successfulOpenCosterPageTest() {

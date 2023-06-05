@@ -3,6 +3,8 @@ package dzr.hanom.tests;
 import dzr.hanom.components.ResultComponents;
 import dzr.hanom.pages.BlogPage;
 import dzr.hanom.pages.LandingPage;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +14,8 @@ public class BlogPageTests extends TestBase {
     LandingPage landingPage = new LandingPage();
     BlogPage blogPage = new BlogPage();
     ResultComponents resultComponents = new ResultComponents();
-
+    @Epic("UI tests cloudmaster.ru")
+    @Feature("Blog page")
     @Test
     @DisplayName("При переходе во вкладку Блог есть запись `Блог Cloudmaster`")
     void successfulOpenBlogPageTest() {
