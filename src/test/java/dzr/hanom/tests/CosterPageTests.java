@@ -27,7 +27,7 @@ public class CosterPageTests extends TestBase {
 
     @Test
     @DisplayName("На странице Coster отображается форма обратной связи")
-    void CosterPageShouldHaveCallbackForm() {
+    void costerPageShouldHaveCallbackForm() {
         step("Открываем вкладку Coster", () -> {
             landingPage.openCosterPage();
         });
