@@ -20,7 +20,6 @@
 <img src="media/logo/Selenide.svg" width="50" height="50"  alt="Selenide"/>
 <img src="media/logo/Selenoid.svg" width="50" height="50"  alt="Selenoid"/>
 <img src="media/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/>
-<img src="media/logo/Telegram.svg" width="50" height="50"  alt="Telegram"/>
 <img src="media/logo/Allure_Report.svg" width="50" height="50"  alt="Allure"/>
 </p>
 
