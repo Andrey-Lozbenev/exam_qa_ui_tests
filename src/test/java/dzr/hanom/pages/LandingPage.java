@@ -37,6 +37,7 @@ public class LandingPage {
         popupCloseElement.click();
         return this;
     }
+
     public LandingPage closeCookie() {
         buttonCoockie.click();
         return this;

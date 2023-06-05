@@ -6,7 +6,6 @@ import dzr.hanom.pages.LandingPage;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Selenide.$;
 import static io.qameta.allure.Allure.step;
 
 public class BlogPageTests extends TestBase {
@@ -18,10 +17,10 @@ public class BlogPageTests extends TestBase {
     @DisplayName("При переходе во вкладку Блог есть запись `Блог Cloudmaster`")
     void successfulOpenBlogPageTest() {
         step("Открываем вкладку Блог", () -> {
-        landingPage.openBlogPage();
+            landingPage.openBlogPage();
         });
         step("Проверяем, что во вкладку Блог есть запись `Блог Cloudmaster`", () -> {
-        resultComponents.checkSuccessfulOpeningBlogPage();
+            resultComponents.checkSuccessfulOpeningBlogPage();
         });
     }
 
@@ -29,16 +28,16 @@ public class BlogPageTests extends TestBase {
     @DisplayName("Открывается нужный блог при клике на новость из списка")
     void successfulOpenRightNewsInBlogRightNewsInBlog() {
         step("Закрываем всплывающее окно Cookies", () -> {
-        landingPage.closeCookie();
+            landingPage.closeCookie();
         });
         step("Открываем вкладку Блог", () -> {
-        landingPage.openBlogPage();
+            landingPage.openBlogPage();
         });
         step("Кликаем на новость 'Интеграция Cloudmaster с Yandex Cloud'", () -> {
-        blogPage.openRightNewsInBlog();
+            blogPage.openRightNewsInBlog();
         });
         step("Проверяем, что во вкладку Блог есть запись `Интеграция Cloudmaster с Yandex Cloud`", () -> {
-        resultComponents.checkSuccessfulOpeningRightNewsInBlog();
+            resultComponents.checkSuccessfulOpeningRightNewsInBlog();
         });
     }
 
@@ -47,13 +46,13 @@ public class BlogPageTests extends TestBase {
     @DisplayName("При нажатии на кнопку 'Загрузить еще' подгружаются еще новости")
     void successfulAddedMoreNews() {
         step("Открываем вкладку Блог", () -> {
-        landingPage.openBlogPage();
+            landingPage.openBlogPage();
         });
         step("Кликаем на кнопку 'Добавить еще'", () -> {
-        blogPage.addMoreNews();
+            blogPage.addMoreNews();
         });
         step("Проверяем, что добавилис еще новости", () -> {
-        resultComponents.checkSuccessfulAddedMoreNews();
+            resultComponents.checkSuccessfulAddedMoreNews();
         });
     }
 
