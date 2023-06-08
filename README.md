@@ -62,3 +62,9 @@ gradle clean test
 #### Тесты
 
 <img src="media/img/JAllureSuites.png" alt="Allure"/>
+
+## <a id="telegram"><img src="media/logo/Telegram.svg" width="50" height="50" ></a> Отчёт в Telegram
+
+После завершения сборки сообщение с основными результатами прогона тестов отправляется через созданный бот в выбранный телеграм-канал
+<p align="center">
+<img src="media/img/Telegram.png">
