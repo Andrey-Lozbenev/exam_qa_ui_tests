@@ -4,6 +4,7 @@ import com.codeborne.selenide.Condition;
 import dzr.hanom.pages.LandingPage;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
@@ -15,7 +16,8 @@ public class PopupFormTests extends TestBase {
 
     @Epic("UI tests cloudmaster.ru")
     @Feature("Popup")
-    @ParameterizedTest(name = "При вводе некорректных значений для полей email и телефон выводится нужный текст ошибки {3}")
+    @DisplayName ("При вводе некорректных значений для полей email и телефон выводится нужный текст ошибки, в зависимости от заданных параметров")
+    @ParameterizedTest()
     @CsvSource(value = {
             "Василий,           test.ru,   70000000000, Введите валидный email",
             "Василий,           test@test.ru,   7000000000, Введите корректный телефон"
