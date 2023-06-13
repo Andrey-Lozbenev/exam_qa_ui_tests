@@ -21,6 +21,7 @@
 <img src="media/logo/Selenoid.svg" width="50" height="50"  alt="Selenoid"/>
 <img src="media/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/>
 <img src="media/logo/Allure_Report.svg" width="50" height="50"  alt="Allure"/>
+<a href="https://qameta.io/"><img src="images/logo/Allure_TO.svg" width="50" height="50"  alt="Allure TestOps"/></a>
 </p>
 
 ## :heavy_check_mark: Что проверяем
@@ -68,3 +69,28 @@ gradle clean test
 После завершения сборки сообщение с основными результатами прогона тестов отправляется через созданный бот в выбранный телеграм-канал
 <p align="center">
 <img src="media/img/Telegram.png">
+
+## <img src="media/logo/Allure_TO.svg" width="25" height="25"  alt="Allure"/></a> Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/3415/dashboards">Allure TestOps</a>
+
+### Dashboard с  результатами тестирования
+<p align="center">
+<img title="Allure Graphics" src="media/img/AllureDashboard.png">
+</p>
+
+### Пример отчёта выполнения одного из автотестов
+<p align="center">
+<img title="Allure Graphics" src="media/img/AllureTest.png">
+</p>
+
+## <img src="media/logo/Jira.svg" width="25" height="25"  alt="Allure"/></a> Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-759">Atlassian Jira</a>
+<p align="center">
+<img title="Jira" src="media/img/Jira.png">
+</p>
+
+
+### <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/logo/Selenoid.svg"> Видео примера запуска тестов в Selenoid
+
+К каждому тесту в отчете прилагается видео прогона.
+<p align="center">
+  <img title="Selenoid Video" src="media/gif/MovieTests.gif">
+</p>
