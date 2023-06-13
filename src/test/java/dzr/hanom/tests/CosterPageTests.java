@@ -17,12 +17,12 @@ public class CosterPageTests extends TestBase {
     @Epic("UI tests cloudmaster.ru")
     @Feature("Coster page")
     @Test
-    @DisplayName("При клике на Coster идет переброс на страницу, на которой есть текст 'FinOps-решение для бюджетирования, контроля и оптимизации расходов'")
+    @DisplayName("При клике на Coster идет переброс на страницу, на которой есть текст 'FinOps-решение для контроля и учета затрат на ИТ-инфраструктуру'")
     void successfulOpenCosterPageTest() {
         step("Открываем вкладку Coster", () -> {
             landingPage.openCosterPage();
         });
-        step("Проверяем, что во вкладку Coster есть запись 'FinOps-решение для бюджетирования, контроля и оптимизации расходов'", () -> {
+        step("Проверяем, что во вкладку Coster есть запись 'FinOps-решение для контроля и учета затрат на ИТ-инфраструктуру'", () -> {
             resultComponents.checkSuccessfulOpeningCosterPage();
         });
     }

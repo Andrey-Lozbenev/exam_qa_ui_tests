@@ -12,7 +12,7 @@ public class ResultComponents {
     BlogPage blogPage = new BlogPage();
 
     public void checkSuccessfulOpeningCosterPage() {
-        costerPage.costerPageH1Element.shouldHave(text("FinOps-решение для бюджетирования, контроля и оптимизации расходов"));
+        costerPage.costerPageH1Element.shouldHave(text("FinOps-решение для контроля и учета затрат на ИТ-инфраструктуру"));
 
     }
 
