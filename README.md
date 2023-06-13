@@ -32,7 +32,7 @@
 > - На странице Coster отображается форма обратной связи 
 > - При клике на Coster идет переброс на страницу, на которой есть текст 'FinOps-решение для бюджетирования, контроля и оптимизации расходов'
 > - При вводе некорректных значений для полей email и телефон выводится нужный текст ошибки Введите валидный email
-## <img width="4%" title="Jenkins" src="media/logo/Jenkins.svg"> Запуск тестов из [Jenkins](https://jenkins.autotests.cloud/job/exam_qa_ui_tests/)
+## <img width="4%" title="Jenkins" src="media/logo/Jenkins.svg"> Запуск тестов из [Jenkins](https://jenkins.autotests.cloud/job/Students/job/exam_qa_ui_tests/)
 
 Для запуска тестов из Jenkins:
 1. Необходимо нажать кнопку "Собрать".
