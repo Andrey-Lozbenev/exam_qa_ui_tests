@@ -40,9 +40,9 @@ public class TestBase {
 
     @BeforeEach
     void addListener() {
-        open("");
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
     }
+
 
     @AfterEach
     void addAttachments() {
