@@ -1,6 +1,7 @@
 package dzr.hanom.tests;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
+import dzr.hanom.config.WebDriverConfig;
 import dzr.hanom.config.WebDriverProvider;
 import dzr.hanom.helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
@@ -13,7 +14,6 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
 
 public class TestBase {
-
     @BeforeAll
     static void setUp() {
         WebDriverProvider.config();
@@ -22,7 +22,7 @@ public class TestBase {
 
     @BeforeEach
     void addListener() {
-        open("");
+        open("https://cloudmaster.ru/");
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
     }
 
