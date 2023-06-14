@@ -12,10 +12,9 @@ public class WebDriverProvider {
         Configuration.browserSize = WebDriverProvider.config.getBrowserSize();
         Configuration.browser = WebDriverProvider.config.getBrowserName();
         Configuration.browserVersion = WebDriverProvider.config.getBrowserVersion();
-        Configuration.remote = WebDriverProvider.config.getRemoteUrl();
-//        String remoteUrl = WebDriverProvider.config.getRemoteUrl();
-//        if (remoteUrl != null) {
-//            Configuration.remote = remoteUrl;
+        String remoteUrl = WebDriverProvider.config.getRemoteUrl();
+        if (remoteUrl != null) {
+            Configuration.remote = remoteUrl;
 
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("enableVNC", true);
