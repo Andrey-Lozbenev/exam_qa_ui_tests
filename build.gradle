@@ -46,3 +46,6 @@ tasks.withType(Test) {
         }
     }
 }
+test {
+    useJUnitPlatform()
+}
