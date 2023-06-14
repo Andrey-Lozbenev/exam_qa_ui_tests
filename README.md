@@ -39,17 +39,15 @@
    <img src="media/img/JApi.PNG" alt="Jenkins"/>
 2. Нажать кнопку "Собрать".
 
-### :earth_asia: Удаленный запуск тестов
-
-```bash
-gradle clean test
+# Запуск тестов
+Для запуска тестов на Selenoid использовать команду ниже:
+```shell
+gradle test -Denv=remote
 ```
 
-## :computer: Запуск тестов из терминала
-
-Для локального запуска необходимо выполнить команду:
-```
-gradle clean test
+Для запуска тестов локально использовать команду ниже:
+```shell
+gradle test -Denv=local
 ```
 
 ## :bar_chart: Отчеты о прохождении тестов доступны в Allure
