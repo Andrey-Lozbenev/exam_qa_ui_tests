@@ -35,7 +35,8 @@ public class TestBase {
                 "enableVideo", true
         ));
 
-        Configuration.browserCapabilities = capabilities;
+        Configuration.browserCapabilities = capabilities
+        open(Configuration.baseUrl);
     }
 
     @BeforeEach
