@@ -20,7 +20,7 @@ public class TestBase {
 
     @BeforeEach
     void addListener() {
-        open("https://cloudmaster.ru/");
+        open("");
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
     }
 
