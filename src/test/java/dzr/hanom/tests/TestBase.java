@@ -16,7 +16,7 @@ public class TestBase {
     @BeforeAll
     static void setUp() {
         WebDriverProvider.config();
-        open("");
+        open("https://cloudmaster.ru/");
     }
 
     @BeforeEach
