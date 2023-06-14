@@ -3,7 +3,7 @@ package dzr.hanom.config;
 import org.aeonbits.owner.Config;
 
 @Config.Sources({
-        "classpath:${env}.properties"
+        "classpath:${ENV}.properties"
 })
 public interface WebDriverConfig extends Config {
 
