@@ -16,11 +16,11 @@ public class TestBase {
     @BeforeAll
     static void setUp() {
         WebDriverProvider.config();
-        open("https://cloudmaster.ru/");
     }
 
     @BeforeEach
     void addListener() {
+        open("https://cloudmaster.ru/");
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
     }
 
