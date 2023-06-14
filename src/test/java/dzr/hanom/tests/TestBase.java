@@ -1,7 +1,9 @@
 package dzr.hanom.tests;
 
 import com.codeborne.selenide.logevents.SelenideLogger;
-import dzr.hanom.config.WebDriverProvider;
+import dzr.hanom.config.ConfigReader;
+import dzr.hanom.config.ProjectConfiguration;
+import dzr.hanom.config.WebConfig;
 import dzr.hanom.helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
@@ -13,15 +15,19 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
 
 public class TestBase {
+
+    private static final WebConfig webConfig = ConfigReader.Instance.read();
+
     @BeforeAll
-    static void setUp() {
-        WebDriverProvider.config();
+    public static void setUp() {
+        SelenideLogger.addListener("allure", new AllureSelenide());
+        ProjectConfiguration projectConfiguration = new ProjectConfiguration(webConfig);
+        projectConfiguration.webConfig();
     }
 
     @BeforeEach
     void addListener() {
         open("");
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
     }
 
     @AfterEach
