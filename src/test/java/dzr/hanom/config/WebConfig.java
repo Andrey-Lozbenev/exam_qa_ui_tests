@@ -19,6 +19,7 @@ public interface WebConfig extends Config {
     @DefaultValue("1920x1080")
     String browserSize();
     @Key("baseUrl")
+    @DefaultValue("https://cloudmaster.ru/")
     String baseUrl();
     @Key("isRemote")
     @DefaultValue("true")
