@@ -1,5 +1,6 @@
 package dzr.hanom.tests;
 
+import com.codeborne.selenide.Selenide;
 import dzr.hanom.components.ResultComponents;
 import dzr.hanom.pages.BlogPage;
 import dzr.hanom.pages.LandingPage;
@@ -26,7 +27,9 @@ public class BlogPageTests extends TestBase {
         });
         step("Проверяем, что во вкладку Блог есть запись `Блог Cloudmaster`", () -> {
             resultComponents.checkSuccessfulOpeningBlogPage();
+            Selenide.closeWebDriver();
         });
+
     }
 
     @Test
