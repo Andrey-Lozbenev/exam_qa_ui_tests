@@ -16,7 +16,7 @@ public class PopupFormTests extends TestBase {
 
     @Epic("UI tests cloudmaster.ru")
     @Feature("Popup")
-    @DisplayName ("При вводе некорректных значений для полей email и телефон выводится нужный текст ошибки, в зависимости от заданных параметров")
+    @DisplayName("При вводе некорректных значений для полей email и телефон выводится нужный текст ошибки, в зависимости от заданных параметров")
     @ParameterizedTest()
     @CsvSource(value = {
             "Василий,           test.ru,   70000000000, Введите валидный email",

@@ -1,6 +1,5 @@
 package dzr.hanom.tests;
 
-import com.codeborne.selenide.Selenide;
 import dzr.hanom.components.ResultComponents;
 import dzr.hanom.pages.LandingPage;
 import io.qameta.allure.Epic;

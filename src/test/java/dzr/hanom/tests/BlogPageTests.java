@@ -1,6 +1,5 @@
 package dzr.hanom.tests;
 
-import com.codeborne.selenide.Selenide;
 import dzr.hanom.components.ResultComponents;
 import dzr.hanom.pages.BlogPage;
 import dzr.hanom.pages.LandingPage;
@@ -9,14 +8,13 @@ import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import static com.codeborne.selenide.Selenide.closeWebDriver;
-import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
 public class BlogPageTests extends TestBase {
     LandingPage landingPage = new LandingPage();
     BlogPage blogPage = new BlogPage();
     ResultComponents resultComponents = new ResultComponents();
+
     @Epic("UI tests cloudmaster.ru")
     @Feature("Blog page")
     @Test
