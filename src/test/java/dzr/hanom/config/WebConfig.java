@@ -6,8 +6,8 @@ import org.aeonbits.owner.Config;
 @Config.Sources({
         "system:properties",
         "classpath:${env}.properties",
-        "file:~/${env}.properties",
-        "file:./${env}.properties"
+      //  "file:~/${env}.properties",
+      //  "file:./${env}.properties"
 })
 public interface WebConfig extends Config {
     @Key("browser")
