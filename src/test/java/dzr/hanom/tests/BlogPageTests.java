@@ -54,6 +54,9 @@ public class BlogPageTests extends TestBase {
     @Test
     @DisplayName("При нажатии на кнопку 'Загрузить еще' подгружаются еще новости")
     void successfulAddedMoreNews() {
+        step("Закрываем всплывающее окно Cookies", () -> {
+            landingPage.closeCookie();
+        });
         step("Открываем вкладку Блог", () -> {
             landingPage.openBlogPage();
         });
