@@ -18,7 +18,10 @@ public class ProjectConfiguration {
         Configuration.browser = webConfig.browser();
         Configuration.browserVersion = webConfig.browserVersion();
         Configuration.browserSize = webConfig.browserSize();
-        if (webConfig.isRemote()) {
+
+ //       if (webConfig.isRemote()) {
+        String remoteUrlTest = webConfig.remoteUrl();
+        if (remoteUrlTest != null) {
             Configuration.remote = webConfig.remoteUrl();
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("selenoid:options", Map.<String, Object>of(
