@@ -1,5 +1,6 @@
 package dzr.hanom.tests;
 
+import com.codeborne.selenide.Selenide;
 import dzr.hanom.components.ResultComponents;
 import dzr.hanom.pages.LandingPage;
 import io.qameta.allure.Epic;
@@ -24,6 +25,7 @@ public class CosterPageTests extends TestBase {
         });
         step("Проверяем, что во вкладку Coster есть запись 'FinOps-решение для контроля и учета затрат на ИТ-инфраструктуру'", () -> {
             resultComponents.checkSuccessfulOpeningCosterPage();
+            Selenide.closeWebDriver();
         });
     }
 
@@ -36,6 +38,7 @@ public class CosterPageTests extends TestBase {
         });
         step("Проверяем, что во вкладку Coster отображается форма обратной связи", () -> {
             resultComponents.checkSuccessfulVisibilityCallbackForm();
+            Selenide.closeWebDriver();
         });
     }
 }

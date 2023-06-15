@@ -46,6 +46,7 @@ public class BlogPageTests extends TestBase {
         });
         step("Проверяем, что во вкладку Блог есть запись `Интеграция Cloudmaster с Yandex Cloud`", () -> {
             resultComponents.checkSuccessfulOpeningRightNewsInBlog();
+            Selenide.closeWebDriver();
         });
 
     }
@@ -65,6 +66,7 @@ public class BlogPageTests extends TestBase {
         });
         step("Проверяем, что добавилис еще новости", () -> {
             resultComponents.checkSuccessfulAddedMoreNews();
+            Selenide.closeWebDriver();
         });
     }
 
