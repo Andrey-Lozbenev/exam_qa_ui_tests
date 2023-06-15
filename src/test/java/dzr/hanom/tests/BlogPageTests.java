@@ -8,6 +8,8 @@ import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import static com.codeborne.selenide.Selenide.closeWebDriver;
+import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
 public class BlogPageTests extends TestBase {
@@ -42,6 +44,7 @@ public class BlogPageTests extends TestBase {
         step("Проверяем, что во вкладку Блог есть запись `Интеграция Cloudmaster с Yandex Cloud`", () -> {
             resultComponents.checkSuccessfulOpeningRightNewsInBlog();
         });
+
     }
 
 
