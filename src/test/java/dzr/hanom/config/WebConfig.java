@@ -22,7 +22,6 @@ public interface WebConfig extends Config {
     @DefaultValue("https://cloudmaster.ru/")
     String baseUrl();
     @Key("isRemote")
-    @DefaultValue("true")
     boolean isRemote();
     @Key("remoteUrl")
     String remoteUrl();
