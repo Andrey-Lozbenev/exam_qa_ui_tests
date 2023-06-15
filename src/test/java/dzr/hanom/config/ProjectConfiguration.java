@@ -19,11 +19,8 @@ public class ProjectConfiguration {
         Configuration.browserVersion = webConfig.browserVersion();
         Configuration.browserSize = webConfig.browserSize();
 
- //       if (webConfig.isRemote()) {
-        String remoteUrlTest = webConfig.remoteUrl();
-        if (remoteUrlTest != null) {
-  //          Configuration.remote = webConfig.remoteUrl();
-            Configuration.remote = remoteUrlTest;
+        if (webConfig.isRemote()) {
+            Configuration.remote = webConfig.remoteUrl();
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setCapability("selenoid:options", Map.<String, Object>of(
                     "enableVNC", true,
